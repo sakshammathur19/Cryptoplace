@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import Coins from './Coins'
-import { CoinContext } from '../Context/Coincontext'
+import { CoinContext } from '../Context/CoinContext'
 import { Link } from 'react-router-dom'
 
 
