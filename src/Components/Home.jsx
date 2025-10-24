@@ -29,9 +29,9 @@ const Home = () => {
   }, [allCoin]);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-[60vh] px-[10px] text-center">
+    <div className=" mt-12 flex flex-col items-center justify-center min-h-[60vh] px-[10px] text-center">
       {/* Hero Section */}
-      <div className="max-w-[600px] flex mx-auto mt-[80px] mb-[60px] flex-col items-center text-center gap-[30px]">
+      <div className="  max-w-[600px] flex mx-auto mt-[80px] mb-[60px] flex-col items-center text-center gap-[30px]">
         <h1 className="text-[max(4vw,36px)] font-bold leading-tight">
           Largest <br /> Crypto Marketplace
         </h1>
@@ -41,11 +41,11 @@ const Home = () => {
         </p>
 
         
-        <form onSubmit={searchHandler} className="px-2 w-[80%] bg-white border-r-[5px] text-[20px] flex justify-between items-center gap-[20px] mx-auto mt-[40px] rounded-lg shadow-md">
+        <form onSubmit={searchHandler} className="  px-2 w-[80%] bg-white border-r-[5px] text-[20px] flex justify-between items-center gap-[20px] mx-auto mt-[40px] mb-[60px] rounded-lg shadow-md">
           <input onChange={inputHandler} list="coinlist" value={input}
             type="text"
             placeholder="Search Crypto.."
-            className="flex-1 px-[20px] py-[18px] text-[18px] text-gray-700 outline-none border-none rounded-l-lg"
+            className=" mb-12 flex-1 px-[20px] py-[18px] text-[18px] text-gray-700 outline-none border-none rounded-l-lg"
           required/>
           <datalist id="coinlist">
             {allCoin.map((item,index)=>(<option key={index} value={item.name}/>))}
@@ -58,9 +58,9 @@ const Home = () => {
           </button>
         </form>
       </div>
-
-      {/* Crypto Table */}
-      <div className="max-w-[900px] mx-auto mb-16 mt-[60px] rounded-2xl bg-gradient-to-r from-[rgba(84,3,255,0.15)] to-[rgba(105,2,153,0.15)] border border-[#3c3c3c]/40 shadow-[0_4px_12px_rgba(0,0,0,0.25)] backdrop-blur-md">
+   
+      
+      <div className="mt-12 max-w-[900px] mx-auto mb-16  rounded-2xl bg-gradient-to-r from-[rgba(84,3,255,0.15)] to-[rgba(105,2,153,0.15)] border border-[#3c3c3c]/40 shadow-[0_4px_12px_rgba(0,0,0,0.25)] backdrop-blur-md">
         {/* Header */}
         <div className="grid grid-cols-[0.5fr_2fr_1fr_1fr_1.5fr] px-6 py-4 items-center border-b border-[#3c3c3c]/60 text-sm font-semibold text-gray-200 uppercase tracking-wide">
           <p>#</p>
